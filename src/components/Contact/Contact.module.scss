@@ -1,0 +1,39 @@
+.contact_heading_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; // Align content to right
+    align-items: center;
+    margin-top: 160px;
+    margin-right: 160px; // Push the whole block a bit left from edge
+}
+
+.whiteline_contact {
+    background-color: white;
+    height: 2px;
+    flex-grow: 0.5;
+    max-width: 50%; // line ends around middle
+    margin-right: 20px; // space between line and text
+}
+
+.contact_name {
+    font-size: 4rem;
+    white-space: nowrap;
+}
+
+.social {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.contact_list{
+    display: block; // ensures it's vertical
+    list-style-type: none; // optional: remove default bullets
+    margin-right: 160px;
+    margin-top: 20px;
+}
+
+.whole_contact_page{
+    height: 400px;
+}

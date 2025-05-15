@@ -39,11 +39,11 @@ function Header() {
       <div className={styles.myname}>Siddhant Shinde</div>
       <div className={styles.navigation}>
         <ul>
-          <li>Resume</li>
-          <li>About Me</li>
-          <li>Skills</li>
-          <li>Project</li>
-          <li>Contact Me</li>
+          <li className={styles.menuu}>Resume</li>
+          <li className={styles.menuu}>About Me</li>
+          <li className={styles.menuu}>Skills</li>
+          <li className={styles.menuu}>Project</li>
+          <li className={styles.menuu}>Contact Me</li>
         </ul>
       </div>
     </header>
