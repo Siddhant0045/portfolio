@@ -1,0 +1,126 @@
+.skillsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columns */
+  gap: 40px;
+  /* spacing between boxes */
+  padding: 20px 160px 20px 160px;
+}
+
+.skillBox {
+  background-color: #393E46;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.miscellaneous {
+  grid-column: 2;
+}
+
+.skills_name {
+  padding-left: 160px;
+  font-size: 4rem;
+}
+
+.whiteline_skills {
+  background-color: white;
+  height: 2px;
+  flex-grow: 0.5;
+  margin: 40px 180px 40px 20px;
+  align-self: center;
+}
+
+.skill_heading_div {
+  display: flex;
+  flex-direction: row;
+}
+
+.whole_skills_div{
+  margin-top: 150px;
+}
+
+.front_end_skills {
+  padding: 20px;
+}
+
+.icons_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center; /* center each icon horizontally */
+  align-items: center;   /* center each icon vertically */
+}
+
+.icons_wrapper svg {
+  height: 48px;
+  width: 48px;
+  margin-top: 20px;
+}
+
+.back_end_skills{
+  padding: 20px;
+}
+
+.dsa_skills{
+  padding: 20px;
+}
+
+.miscellaneous_skills{
+  padding: 20px;
+}
+
+.icons_wrapper img{
+  height: 48px;
+  width: 48px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.skillBox h4{
+  font-size: 1.1rem;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width:1300px) {
+  .skillsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 20px 160px 20px 160px;
+  }
+
+  .whiteline_skills {
+    flex-grow: 1;
+  }
+}
+
+@media (max-width:900px) {
+    .skillsContainer {
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+@media (max-width:700px){
+  .skills_name{
+    padding-left: 80px;
+  }
+  .whiteline_skills{
+    margin-right: 80px;
+  }
+  .skillsContainer{
+    padding: 20px 80px;
+  }
+}
+
+@media (max-width:450px) {
+  .icons_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center; /* center each icon horizontally */
+    align-items: center;   /* center each icon vertically */
+  }
+}

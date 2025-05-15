@@ -1,0 +1,45 @@
+p{
+    width: 600px;
+}
+
+.container_aboutme{
+    display: flex;
+//   justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  padding-left: 160px;
+}
+
+.aboutme_text{
+    font-size: 4rem;
+}
+
+.content_aboutme{
+    text-align: left;
+}
+
+@media(max-width:900px){
+    .container_aboutme{
+        justify-content: center;
+        padding: 20px;
+    }
+    .aboutme_text{
+        text-align: left;
+    }
+}
+
+@media(max-width:750px) {
+    p{
+        width: auto;
+    }
+    .container_aboutme{
+        justify-content: center;
+        padding: 20px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .aboutme_text{
+        text-align: left;
+    }
+}

@@ -1,0 +1,103 @@
+.myname {
+    font-size: 20px;
+    padding: 16px;
+}
+
+.navigation {
+    font-size: 0.9rem;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 8px; // underline at the bottom of the li
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: #ffffff; // change as per your theme
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+    }
+
+    &:hover::after {
+        width: 75%;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scrolled {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // line appears on scroll
+}
+
+.hidden {
+    transform: translateY(-100%); // hides the header by moving it up
+}
+
+.myname {
+    font-size: 20px;
+    padding: 16px;
+}
+
+.navigation {
+    font-size: 0.9rem;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    padding: 10px;
+}
+
+@media(max-width:600px){
+    header{
+        flex-direction: column;
+    }
+    .myname{
+        align-items: center;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .navigation{
+        align-items: center;
+        text-align: center;
+        margin-left: 0px;
+    }
+}
+
+@media(max-width:400px){
+    li{
+        padding: 8px;
+    }
+}
