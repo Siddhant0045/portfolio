@@ -4,7 +4,7 @@ export const Fluid = () => {
   React.useEffect(() => {
     const script = document.createElement('script');
 
-    script.src = '/assets/js/fluidInit.js';
+    script.src = `${import.meta.env.BASE_URL}assets/js/fluidInit.js`;
     script.async = false;
     script.type = 'module';
 
