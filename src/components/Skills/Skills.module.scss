@@ -1,9 +1,7 @@
 .skillsContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* 3 columns */
   gap: 40px;
-  /* spacing between boxes */
   padding: 20px 160px 20px 160px;
 }
 
@@ -47,8 +45,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  justify-items: center; /* center each icon horizontally */
-  align-items: center;   /* center each icon vertically */
+  justify-items: center; 
+  align-items: center;  
 }
 
 .icons_wrapper svg {
@@ -119,8 +117,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    justify-items: center; /* center each icon horizontally */
-    align-items: center;   /* center each icon vertically */
+    justify-items: center;
+    align-items: center;  
   }
 }
 

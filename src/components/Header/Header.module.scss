@@ -23,11 +23,11 @@ ul {
     &::after {
         content: "";
         position: absolute;
-        bottom: 8px; // underline at the bottom of the li
+        bottom: 8px; 
         left: 50%;
         width: 0;
         height: 2px;
-        background-color: #ffffff; // change as per your theme
+        background-color: #ffffff; 
         transition: all 0.3s ease;
         transform: translateX(-50%);
     }
@@ -52,11 +52,11 @@ header {
 }
 
 .scrolled {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // line appears on scroll
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .hidden {
-    transform: translateY(-100%); // hides the header by moving it up
+    transform: translateY(-100%); 
 }
 
 .myname {

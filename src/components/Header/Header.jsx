@@ -13,10 +13,8 @@ function Header() {
       setIsScrolled(currentScrollY > 0);
 
       if (currentScrollY > lastScrollY && currentScrollY > 50) {
-        // scrolling down
         setIsVisible(false);
       } else {
-        // scrolling up
         setIsVisible(true);
       }
 
